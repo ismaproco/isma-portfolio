@@ -1,0 +1,117 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', cursive;
+  
+}
+
+main {
+  /* border: 0.5rem solid #333; */
+  background: #fff;
+  box-sizing: border-box;
+  min-height: calc(100% - 1rem);
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 10px rgba(51, 51, 51, 1);
+  position: relative;
+  padding: 0.5rem;
+}
+
+nav {
+  display: flex;
+  height: 2.5rem;
+  color: rgba(255,255,255,.87);
+  background: #333;
+  align-items: center;
+  font-family: monospace;
+  position: sticky;
+  top: 0;
+}
+
+.cursor {
+  display: inline-block;
+  height: 1rem;
+  width: 0.5rem;
+  background: #fff;
+  margin-left: 0.25rem;
+  animation-duration: 0.5s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    background: #fff;
+  }
+
+  to {
+    background: #333;
+  }
+}
+
+h3 {
+  margin: 1rem 0;
+}
+
+ul {
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+}
+
+.avatar-container {
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.avatar {
+  width: 100%;
+  margin: auto;
+}
+
+.content {
+  margin: auto;
+  padding: 1rem;
+  line-height: 1.5rem;
+} 
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media all and (min-width: 1280px) {
+  .content {
+    width: 60rem;
+  }
+}
+
+
+@media all and (min-width: 720px) and (max-width: 1280px) {
+  .content {
+    margin: auto;
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 980px) {
+
+}
+
+@media all and (max-width: 736px) {
+  
+}
